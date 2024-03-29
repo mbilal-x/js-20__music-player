@@ -205,14 +205,15 @@ music.addEventListener('timeupdate', progressUpdate);
 
 
 // progressSelector
-function progressSelector(){
-
+function setProgressBar(e) {
+  const width = this.clientWidth;
+  const clickX = e.offsetX;
+  const { duration } = music;
+  music.currentTime = (clickX / width) * duration;
 }
 
 // progressSelector eventListener
-progresContainer.addEventListener('click', (e) => {
-    console.log(e);
-});
+progresContainer.addEventListener('click', setProgressBar );
 
 
 
