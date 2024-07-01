@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <title>js-20 [MUSIC PLAYER] | mbilal-x</title>
+</head>
+<body>
+    <!-- music player -->
+    <main class="music-player">
+        <div class="image-container">
+            <img src="./images/album-cover-1.jpg" alt="album cover image">
+        </div>
+        <h2 class="music-title">Forget (Slowed)</h2>
+        <h3 class="music-artist">XXKATUSJINSUX</h3>
+        <!-- song  -->
+        <audio src="./music/XXKATUSJINSUX - Forget (Slowed) Audio Official.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+        <!-- progress  -->
+        <div class="progress-container">
+            <div class="progress"></div>
+            <div class="duration-wrapper">
+                <span class="current-time">0:00</span>
+                <span class="duration">2:44</span>
+            </div>
+            
+            
+        </div>
+        <!-- player controls  -->
+        <div class="player-controls">
+            <i class="fas fa-backward" id="prev" title="Previous"></i>
+            <i class="fas fa-play main-button" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" title="Next"></i>
+        </div>
+    </main>
+    
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
